@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <div style="height: 100px; width: 200px;" class="x">hello</div>
+    
+    <button id="y">click me</button>
+    <script>
+            var x = document.getElementsByClassName('x')
+            var c = 0
+            var r, g, b;
+
+            document.getElementById('y').onclick=function()
+            {
+                if(c===0)
+                {
+                    r = Math.random()*255
+                    b = Math.random()*255
+                    g = Math.random()*255
+                    x[0].style.backgroundColor="rgb("+r+","+g+","+b+")"
+                }
+                
+            }
+    </script>
+</body>
+</html>
