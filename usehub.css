@@ -14,9 +14,16 @@
 }
 
 html{
-    
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+html::-webkit-scrollbar{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  width: 5px;
+ 
+}
+
 
 body{
     font-family: 'poppins', sans-serif;
@@ -42,10 +49,11 @@ a{
 }
 
 .container{
-    max-width: 1180px;
+    /* max-width: 1180px; */
     overflow: hidden;
     padding-inline: auto;
     margin-inline: auto; 
+    width: calc(100vw - 5px);
 }
 .banner{
     /* line-height: 1.8rem; */
@@ -55,7 +63,7 @@ a{
     background-image: url(asset\ 32.png);
     background-size: 300px;
     font-family: 'Roboto', sans-serif;
-  
+    width: 100vw;
    
 }   
 
@@ -76,9 +84,11 @@ a{
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-left: 0;
+    width: calc(100vw - 5px);
+    
 }
 .logo{
     display: flex;
@@ -86,15 +96,14 @@ a{
     justify-content: center;
     height: auto;
     width: auto;
-    gap: 0px;
+    gap: 3px;
+    
 }
 
 /* Become a tester */
 .become-a-tester{
     font-family: 'poppins' sans-serif;
-    margin-left: 5px;
     background-image: url(asset\ 33.svg);
-    background-size: 160px 33px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     font-size: 14px;
@@ -102,9 +111,6 @@ a{
     color:#183b56;
     height: auto;
     width: auto;
-    margin-top: -5px;
-    
- 
 }
 /* top-links */
 
@@ -140,20 +146,22 @@ a{
 }
 /* main heading area */
 .heroimg img{
-    margin-top: 10px;
-    height: 420px; 
+    
+    width: 100%; 
    /* width: auto;   */
 }
 
 .heroimg{
-    width: 50%;
+    width: 40%;
 }
 .main-heading{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 80px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    
+    height: 70vh;
+    padding-left: 3.5%;
 }
 
 .heading1 p{
@@ -163,7 +171,8 @@ a{
 }
 
 .heading1{
-    width: 40vw;
+    
+    width: 40%;
 }
 
 .links a{
